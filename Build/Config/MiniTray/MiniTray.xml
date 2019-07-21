@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="gb2312" ?>
+<Config autoHide="1">
+    <UseTaskBar value="1"/>					<!--  是否需要使用托盘 -->
+    <Icon value="\Image\WRISFramework.ico" />		    		<!--  图标路径 -->
+</Config>

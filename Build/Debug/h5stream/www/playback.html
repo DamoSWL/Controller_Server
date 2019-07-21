@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>  
+<html>  
+<head>
+<title>H5STREAM VIDEO</title>
+<script src="js/jquery-3.1.1.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/adapter.js"></script>
+<script src="js/platform.js"></script>
+<script src="js/h5splayer.js"></script>
+<script src="js/h5splayerhelper.js"></script>
+
+<link rel = "stylesheet" type = "text/css" href = "css/h5splayer.css" />
+
+</head>
+
+<body> 
+
+<div >
+    <video class="h5video" id="h5sVideo1"  >
+
+    </video>
+	<input type="input" id="speed1" placeholder="speed" value="2.0" type="text"></button>
+	<input type="input" id="seek1" placeholder="seek" value="0" type="text"></button>
+	<button type="button" onclick="Play()">Play</button>
+	<button type="button" onclick="Stop()">Stop</button>
+	<button type="button" onclick="Pause()">Pause</button>
+	<button type="button" onclick="Resume()">Resume</button>
+	<button type="button" onclick="Speed()">Speed</button>
+	<button type="button" onclick="Seek()">Seek</button>
+</div>
+
+</body>
+
+<script>
+
+var conf1 = {
+	videoid:'h5sVideo1',
+	protocol: window.location.protocol, //http: or https:
+	host: window.location.host, //localhost:8080
+	rootpath:'/', // '/'
+	token:'token1',
+	hlsver:'v1', //v1 is for ts, v2 is for fmp4
+	session:'c1782caf-b670-42d8-ba90-2244d0b0ee83' //session got from login
+};
+
+var v1;
+
+function Play()
+{
+	console.log(conf1);
+	v1 = new H5sPlayerWS(conf1);
+	v1.connect();
+}
+
+function Stop()
+{
+	v1.disconnect();
+
+	delete v1;
+	v1 = null;
+}
+
+function Pause()
+{
+	v1.pause();
+}
+
+function Resume()
+{
+	v1.resume();
+}
+
+function Speed()
+{
+	console.log("Speed", $('#speed1').val());
+	v1.speed($('#speed1').val());
+}
+
+function Seek()
+{
+	console.log("Seek", $('#seek1').val());
+	v1.seek($('#seek1').val());
+}
+
+
+
+
+
+</script>
+
+</html> 

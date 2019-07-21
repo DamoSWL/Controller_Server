@@ -1,0 +1,8 @@
+#ifndef WRSOCCONTRTOLSTRING_RESOURCE_H
+#define WRSOCCONTRTOLSTRING_RESOURCE_H
+
+#define STR_PLUGIN_NAME g_Name_WRSOCcontrtol
+
+
+
+#endif

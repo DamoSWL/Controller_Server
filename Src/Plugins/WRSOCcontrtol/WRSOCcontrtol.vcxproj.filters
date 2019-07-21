@@ -1,0 +1,389 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{22725625-a7cf-49e4-9600-39d7b151fa52}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{6257cec8-a036-4609-adfc-1998517e09ad}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{51fe5e54-146e-4df0-b081-da3bf86eb2a7}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;jpg;jpeg;jpe;manifest</Extensions>
+    </Filter>
+    <Filter Include="wxFormBuilder Files">
+      <UniqueIdentifier>{49511f92-2d45-4b34-a618-14e1772f8887}</UniqueIdentifier>
+      <Extensions>fbp</Extensions>
+    </Filter>
+    <Filter Include="Interface Files">
+      <UniqueIdentifier>{17090b70-a7c0-4745-8017-382782b1433f}</UniqueIdentifier>
+      <Extensions>h;i</Extensions>
+    </Filter>
+    <Filter Include="Header Files\TXTParser">
+      <UniqueIdentifier>{c01f2d07-e707-44aa-9b64-7838450855f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\TXTParser">
+      <UniqueIdentifier>{f3d73699-08cf-4557-af20-0956ec5627e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Radar">
+      <UniqueIdentifier>{4510df38-5b14-4ff8-8942-3e82087e6da2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Radar">
+      <UniqueIdentifier>{98ab3a0b-462f-4fbb-8791-9f6372d9185d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Alarm">
+      <UniqueIdentifier>{44c85226-5f88-4e7c-a4c4-b5c8d002fd4b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Alarm">
+      <UniqueIdentifier>{07d05eb1-7618-42c6-a76d-98c882adcc90}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\UPSEnv">
+      <UniqueIdentifier>{744ebda2-1ceb-42a8-923d-2971d2901a92}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\UPSEnv">
+      <UniqueIdentifier>{b74a0515-2865-4641-8ec8-efa9c2f84e85}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\NET">
+      <UniqueIdentifier>{37d112d0-0067-4237-aed1-60f08c368c97}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\NET">
+      <UniqueIdentifier>{9d274cfd-d355-497e-9197-7bab2adef674}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\SMS">
+      <UniqueIdentifier>{0692f1ab-5755-4bc5-839e-bf4bb07dde8a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\SMS">
+      <UniqueIdentifier>{6492d98e-5146-43a7-a56f-d6c9fc15ef71}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\FTP">
+      <UniqueIdentifier>{3b2d99c8-8ded-4fc6-82a5-1c03bc22598c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\FTP">
+      <UniqueIdentifier>{84248041-d910-444d-86f9-d225016665ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Generator">
+      <UniqueIdentifier>{b2c61113-162b-43bd-8a51-ec0b555cc77c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Generator">
+      <UniqueIdentifier>{470d091e-7370-4708-b38d-04bf9d20cbea}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="wx_pch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WRSOCcontrtolMain.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stringresource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WRSOCcontrtol_gui.h">
+      <Filter>wxFormBuilder Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WRSOCcontrtolToolBar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WRSOCcontrtolMenu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WRSOCcontrtolSet.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Interface\WRSOCcontrtol\WRSOCcontrtol_I.h">
+      <Filter>Interface Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wxipctrl.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pugixml.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DynTestResult.h">
+      <Filter>Header Files\TXTParser</Filter>
+    </ClInclude>
+    <ClInclude Include="ITXTParse.h">
+      <Filter>Header Files\TXTParser</Filter>
+    </ClInclude>
+    <ClInclude Include="Parser.h">
+      <Filter>Header Files\TXTParser</Filter>
+    </ClInclude>
+    <ClInclude Include="PhaseNoiseResult.h">
+      <Filter>Header Files\TXTParser</Filter>
+    </ClInclude>
+    <ClInclude Include="RefCalibResult.h">
+      <Filter>Header Files\TXTParser</Filter>
+    </ClInclude>
+    <ClInclude Include="SunResultParse.h">
+      <Filter>Header Files\TXTParser</Filter>
+    </ClInclude>
+    <ClInclude Include="RadarParser.h">
+      <Filter>Header Files\Radar</Filter>
+    </ClInclude>
+    <ClInclude Include="EnvAlarm.h">
+      <Filter>Header Files\Alarm</Filter>
+    </ClInclude>
+    <ClInclude Include="LogAlarm.h">
+      <Filter>Header Files\Alarm</Filter>
+    </ClInclude>
+    <ClInclude Include="RadarStatusAlarm.h">
+      <Filter>Header Files\Alarm</Filter>
+    </ClInclude>
+    <ClInclude Include="SiteAlarm.h">
+      <Filter>Header Files\Alarm</Filter>
+    </ClInclude>
+    <ClInclude Include="UPSAlarm.h">
+      <Filter>Header Files\Alarm</Filter>
+    </ClInclude>
+    <ClInclude Include="EnvironmentData.h">
+      <Filter>Header Files\UPSEnv</Filter>
+    </ClInclude>
+    <ClInclude Include="RadarRunEnvironment.h">
+      <Filter>Header Files\UPSEnv</Filter>
+    </ClInclude>
+    <ClInclude Include="SerialPort.h">
+      <Filter>Header Files\UPSEnv</Filter>
+    </ClInclude>
+    <ClInclude Include="NetService.h">
+      <Filter>Header Files\NET</Filter>
+    </ClInclude>
+    <ClInclude Include="AdaptChg.h">
+      <Filter>Header Files\TXTParser</Filter>
+    </ClInclude>
+    <ClInclude Include="RadarExeParser.h">
+      <Filter>Header Files\TXTParser</Filter>
+    </ClInclude>
+    <ClInclude Include="radarStructure.h">
+      <Filter>Header Files\Radar</Filter>
+    </ClInclude>
+    <ClInclude Include="SARadarParser.h">
+      <Filter>Header Files\Radar</Filter>
+    </ClInclude>
+    <ClInclude Include="CDRadarParser.h">
+      <Filter>Header Files\Radar</Filter>
+    </ClInclude>
+    <ClInclude Include="SCRadarParser.h">
+      <Filter>Header Files\Radar</Filter>
+    </ClInclude>
+    <ClInclude Include="HealthIndex.h">
+      <Filter>Header Files\Radar</Filter>
+    </ClInclude>
+    <ClInclude Include="RadarLocalController.h">
+      <Filter>Header Files\NET</Filter>
+    </ClInclude>
+    <ClInclude Include="AirConditionerController.h">
+      <Filter>Header Files\NET</Filter>
+    </ClInclude>
+    <ClInclude Include="RadarController.h">
+      <Filter>Header Files\NET</Filter>
+    </ClInclude>
+    <ClInclude Include="SAAlarm.h">
+      <Filter>Header Files\Alarm</Filter>
+    </ClInclude>
+    <ClInclude Include="SCAlarm.h">
+      <Filter>Header Files\Alarm</Filter>
+    </ClInclude>
+    <ClInclude Include="CDAlarm.h">
+      <Filter>Header Files\Alarm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Interface\MySqlDB\MySqlDB_I.h">
+      <Filter>Interface Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SMSHandler.h">
+      <Filter>Header Files\SMS</Filter>
+    </ClInclude>
+    <ClInclude Include="IProcess.h">
+      <Filter>Header Files\UPSEnv</Filter>
+    </ClInclude>
+    <ClInclude Include="Temperature.h">
+      <Filter>Header Files\UPSEnv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Interface\TCPServer\TCPServer_I.h">
+      <Filter>Interface Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FTPThread.h">
+      <Filter>Header Files\FTP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Interface\CurlModule\CurlModule_I.h">
+      <Filter>Interface Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CCRadarParser.h">
+      <Filter>Header Files\Radar</Filter>
+    </ClInclude>
+    <ClInclude Include="AirHandler.h">
+      <Filter>Header Files\NET</Filter>
+    </ClInclude>
+    <ClInclude Include="UPSHandlerSNMP.h">
+      <Filter>Header Files\UPSEnv</Filter>
+    </ClInclude>
+    <ClInclude Include="UPSHandlerRS232.h">
+      <Filter>Header Files\UPSEnv</Filter>
+    </ClInclude>
+    <ClInclude Include="Generator.h">
+      <Filter>Header Files\Generator</Filter>
+    </ClInclude>
+    <ClInclude Include="SpecAirConditionController.h">
+      <Filter>Header Files\NET</Filter>
+    </ClInclude>
+    <ClInclude Include="SNMPAirConditionController.h">
+      <Filter>Header Files\NET</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="doc.txt" />
+    <None Include="version.txt" />
+    <None Include="WRSOCcontrtol.fbp">
+      <Filter>wxFormBuilder Files</Filter>
+    </None>
+    <None Include="ClassDiagram1.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <Manifest Include="WRSOCcontrtol.exe.manifest">
+      <Filter>Resource Files</Filter>
+    </Manifest>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="WRSOCcontrtol.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="WRSOCcontrtolPlug.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="version.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="WRSOCcontrtolMain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="WRSOCcontrtol_gui.cpp">
+      <Filter>wxFormBuilder Files</Filter>
+    </ClCompile>
+    <ClCompile Include="WRSOCcontrtolSet.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pugixml.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DynTestResult.cpp">
+      <Filter>Source Files\TXTParser</Filter>
+    </ClCompile>
+    <ClCompile Include="Parser.cpp">
+      <Filter>Source Files\TXTParser</Filter>
+    </ClCompile>
+    <ClCompile Include="PhaseNoiseResult.cpp">
+      <Filter>Source Files\TXTParser</Filter>
+    </ClCompile>
+    <ClCompile Include="RefCalibResult.cpp">
+      <Filter>Source Files\TXTParser</Filter>
+    </ClCompile>
+    <ClCompile Include="SunResultParse.cpp">
+      <Filter>Source Files\TXTParser</Filter>
+    </ClCompile>
+    <ClCompile Include="RadarParser.cpp">
+      <Filter>Source Files\Radar</Filter>
+    </ClCompile>
+    <ClCompile Include="EnvAlarm.cpp">
+      <Filter>Source Files\Alarm</Filter>
+    </ClCompile>
+    <ClCompile Include="LogAlarm.cpp">
+      <Filter>Source Files\Alarm</Filter>
+    </ClCompile>
+    <ClCompile Include="RadarStatusAlarm.cpp">
+      <Filter>Source Files\Alarm</Filter>
+    </ClCompile>
+    <ClCompile Include="SiteAlarm.cpp">
+      <Filter>Source Files\Alarm</Filter>
+    </ClCompile>
+    <ClCompile Include="UPSAlarm.cpp">
+      <Filter>Source Files\Alarm</Filter>
+    </ClCompile>
+    <ClCompile Include="EnvironmentData.cpp">
+      <Filter>Source Files\UPSEnv</Filter>
+    </ClCompile>
+    <ClCompile Include="RadarRunEnvironment.cpp">
+      <Filter>Source Files\UPSEnv</Filter>
+    </ClCompile>
+    <ClCompile Include="SerialPort.cpp">
+      <Filter>Source Files\UPSEnv</Filter>
+    </ClCompile>
+    <ClCompile Include="NetService.cpp">
+      <Filter>Source Files\NET</Filter>
+    </ClCompile>
+    <ClCompile Include="AdaptChg.cpp">
+      <Filter>Source Files\TXTParser</Filter>
+    </ClCompile>
+    <ClCompile Include="RadarExeParser.cpp">
+      <Filter>Source Files\TXTParser</Filter>
+    </ClCompile>
+    <ClCompile Include="MysqlDatabase.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SARadarParser.cpp">
+      <Filter>Source Files\Radar</Filter>
+    </ClCompile>
+    <ClCompile Include="CDRadarParser.cpp">
+      <Filter>Source Files\Radar</Filter>
+    </ClCompile>
+    <ClCompile Include="SCRadarParser.cpp">
+      <Filter>Source Files\Radar</Filter>
+    </ClCompile>
+    <ClCompile Include="HealthIndex.cpp">
+      <Filter>Source Files\Radar</Filter>
+    </ClCompile>
+    <ClCompile Include="RadarLocalController.cpp">
+      <Filter>Source Files\NET</Filter>
+    </ClCompile>
+    <ClCompile Include="AirConditionerController.cpp">
+      <Filter>Source Files\NET</Filter>
+    </ClCompile>
+    <ClCompile Include="RadarController.cpp">
+      <Filter>Source Files\NET</Filter>
+    </ClCompile>
+    <ClCompile Include="SAAlarm.cpp">
+      <Filter>Source Files\Alarm</Filter>
+    </ClCompile>
+    <ClCompile Include="SCAlarm.cpp">
+      <Filter>Source Files\Alarm</Filter>
+    </ClCompile>
+    <ClCompile Include="CDAlarm.cpp">
+      <Filter>Source Files\Alarm</Filter>
+    </ClCompile>
+    <ClCompile Include="Temperature.cpp">
+      <Filter>Source Files\UPSEnv</Filter>
+    </ClCompile>
+    <ClCompile Include="FTPThread.cpp">
+      <Filter>Source Files\FTP</Filter>
+    </ClCompile>
+    <ClCompile Include="SMSHandler.cpp">
+      <Filter>Source Files\SMS</Filter>
+    </ClCompile>
+    <ClCompile Include="CCRadarParser.cpp">
+      <Filter>Source Files\Radar</Filter>
+    </ClCompile>
+    <ClCompile Include="AirHandler.cpp">
+      <Filter>Source Files\NET</Filter>
+    </ClCompile>
+    <ClCompile Include="UPSHandlerSNMP.cpp">
+      <Filter>Source Files\UPSEnv</Filter>
+    </ClCompile>
+    <ClCompile Include="UPSHandlerRS232.cpp">
+      <Filter>Source Files\UPSEnv</Filter>
+    </ClCompile>
+    <ClCompile Include="Generator.cpp">
+      <Filter>Source Files\Generator</Filter>
+    </ClCompile>
+    <ClCompile Include="SpecAirConditionController.cpp">
+      <Filter>Source Files\NET</Filter>
+    </ClCompile>
+    <ClCompile Include="SNMPAirConditionController.cpp">
+      <Filter>Source Files\NET</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,1 @@
+consul agent -server -bind=192.168.100.119 -join=192.168.100.182  -client 0.0.0.0 -ui -node=node2 -data-dir=/tmp/consul -datacenter=h5s

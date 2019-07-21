@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<config>
+	<database>
+		<hostname>127.0.0.1</hostname>
+		<user>root</user>
+		<password>cdyw</password>
+		<databasename>wrsocdb</databasename>
+	</database>
+	<!-- 离线标定文件的目录和更新时间 -->
+	<txtfile>
+		<SunResultdir></SunResultdir>
+		<SunResulttime>1539763093</SunResulttime>
+		<RefCalibResultdir></RefCalibResultdir>
+		<RefCalibResulttime>1539312504</RefCalibResulttime>
+		<DynTestResultdir></DynTestResultdir>
+		<DynTestResulttime>1539762113</DynTestResulttime>
+		<PhaseNoiseResultdir></PhaseNoiseResultdir>
+		<PhaseNoiseResulttime>1536913070</PhaseNoiseResulttime>
+		<alarmLogDir></alarmLogDir>
+		<alarmtime>1540524480</alarmtime>
+		<adaptchgdir />
+		<adaptchgtime>0</adaptchgtime>
+		<adaptchgreadsize>380</adaptchgreadsize>
+		<radarexeDir />
+		<radarexetime>0</radarexetime>
+		<radarexefilename>radar18.exe</radarexefilename>
+	</txtfile>
+	<!--雷达参数文件的目录和更新时间 -->
+	<radar>
+		<radarStatusDir></radarStatusDir>
+		<radarStatustime>1547123982</radarStatustime>
+		<radarDataDir></radarDataDir>
+		<radarDatatime>1542589980</radarDatatime>
+	</radar>
+	<!-- 视频抓图的存放目录和间隔时间 -->
+	<video>
+		<videodir />
+		<videointerval>5</videointerval>
+		<videosave>1</videosave>
+	</video>
+	<!-- UPS的IP、采样间隔和采样模式 -->
+	<UPS>
+		<IP>222.18.149.122</IP>
+		<interval>1</interval>
+		<ControlMode>1</ControlMode>
+	</UPS>
+	<FTP>
+		<IP>106.120.82.223</IP>
+		<port>21</port>
+		<username>test</username>
+		<password>test</password>
+		<remotepath>/</remotepath>
+	</FTP>
+	<!-- 备份文件路径 -->
+	<BackupPath>F:\aaa\temp</BackupPath>
+</config>

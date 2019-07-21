@@ -1,0 +1,226 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{9BDA7A0D-6CC8-45D9-8956-842A7076AB5C}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IntDir>$(Configuration)\</IntDir>
+    <OutDir>../../../build/$(Configuration)/plugin/$(ProjectName)\</OutDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IntDir>$(Configuration)\</IntDir>
+    <OutDir>../../../build/$(Configuration)/plugin/$(ProjectName)\</OutDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <AdditionalIncludeDirectories>$(WXWIN)/include;$(WXADDITIONS)/include;$(WXWIN)/contrib/include;$(GRS_SDK);$(GRS_SDK)/interface;$(GRS_SDK)/include;$(GRS_SDK)/include/pthread;$(GRS_SDK)/include/ywsocket;$(GRS_SDK)/include/mysql;F:\vld\vld2.3\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>wx_pch.h; $(WXWIN)/include/msvc/wx/setup.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PrecompiledHeaderFile>wx_pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)/$(TargetName).pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Create</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <MinimalRebuild>true</MinimalRebuild>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;STRICT;__WXMSW__;__WX__;_DEBUG;__WXDEBUG__;_WINDOWS;TIXML_USE_TICPP;wxUSE_UNICODE;WXUSINGDLL;_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StructMemberAlignment>Default</StructMemberAlignment>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>comctl32.lib;rpcrt4.lib;winmm.lib;ws2_32.lib;iphlpapi.lib;LibWRISFramework.lib;version.lib;tinyxml++.lib;pthreadVC2.lib;UDP.lib;libmysql.lib;HCCore.lib;HCNetSDK.lib;HCPreview.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(ProjectDir)/lib;$(GRS_SDK)/include/targetsxs.h;$(WXWIN)/lib/vc_dll;$(WXADDITIONS)/lib/vc_dll;$(GRS_SDK)/lib/$(ConfigurationName);F:\vld\vld2.3\lib\Win32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <Profile>true</Profile>
+    </Link>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir); $(WXWIN)/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <AdditionalIncludeDirectories>$(WXWIN)/include;$(WXADDITIONS)/include;$(WXWIN)/contrib/include;$(GRS_SDK);$(GRS_SDK)/interface;$(GRS_SDK)/include;$(GRS_SDK)/include/pthread;$(GRS_SDK)/include/ywsocket;$(GRS_SDK)/include/mysql;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>wx_pch.h; $(WXWIN)/include/msvc/wx/setup.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PrecompiledHeaderFile>wx_pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)/$(TargetName).pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Create</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;STRICT;__WXMSW__;__WX__;NDEBUG;_WINDOWS;TIXML_USE_TICPP;wxUSE_UNICODE;WXUSINGDLL;_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Optimization>MinSpace</Optimization>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalDependencies>comctl32.lib;rpcrt4.lib;winmm.lib;ws2_32.lib;iphlpapi.lib;LibWRISFramework.lib;version.lib;tinyxml++.lib;pthreadVC2.lib;UDP.lib;libmysql.lib;HCCore.lib;HCNetSDK.lib;HCPreview.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(ProjectDir)/lib;$(GRS_SDK)/include/targetsxs.h;$(WXWIN)/lib/vc_dll;$(WXADDITIONS)/lib/vc_dll;$(GRS_SDK)/lib/$(ConfigurationName);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+    </Link>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir); $(WXWIN)/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <PreBuildEvent>
+      <Message>增加编译版本号 . . .</Message>
+      <Command>ChangeRev /s$(ProjectDir) /f$(ProjectDir)version.cpp /r$(ProjectDir)$(ProjectName).rc</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Interface\CurlModule\CurlModule_I.h" />
+    <ClInclude Include="..\..\Interface\MySqlDB\MySqlDB_I.h" />
+    <ClInclude Include="..\..\Interface\TCPServer\TCPServer_I.h" />
+    <ClInclude Include="..\..\Interface\WRSOCcontrtol\WRSOCcontrtol_I.h" />
+    <ClInclude Include="AdaptChg.h" />
+    <ClInclude Include="AirHandler.h" />
+    <ClInclude Include="CCRadarParser.h" />
+    <ClInclude Include="CDAlarm.h" />
+    <ClInclude Include="CDRadarParser.h" />
+    <ClInclude Include="DynTestResult.h" />
+    <ClInclude Include="EnvAlarm.h" />
+    <ClInclude Include="EnvironmentData.h" />
+    <ClInclude Include="FTPThread.h" />
+    <ClInclude Include="Generator.h" />
+    <ClInclude Include="HealthIndex.h" />
+    <ClInclude Include="AirConditionerController.h" />
+    <ClInclude Include="IProcess.h" />
+    <ClInclude Include="ITXTParse.h" />
+    <ClInclude Include="LogAlarm.h" />
+    <ClInclude Include="NetService.h" />
+    <ClInclude Include="Parser.h" />
+    <ClInclude Include="PhaseNoiseResult.h" />
+    <ClInclude Include="pugixml.hpp" />
+    <ClInclude Include="RadarController.h" />
+    <ClInclude Include="RadarExeParser.h" />
+    <ClInclude Include="RadarLocalController.h" />
+    <ClInclude Include="RadarParser.h" />
+    <ClInclude Include="RadarRunEnvironment.h" />
+    <ClInclude Include="RadarStatusAlarm.h" />
+    <ClInclude Include="radarStructure.h" />
+    <ClInclude Include="RefCalibResult.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="SAAlarm.h" />
+    <ClInclude Include="SARadarParser.h" />
+    <ClInclude Include="SCAlarm.h" />
+    <ClInclude Include="SCRadarParser.h" />
+    <ClInclude Include="SerialPort.h" />
+    <ClInclude Include="SiteAlarm.h" />
+    <ClInclude Include="SMSHandler.h" />
+    <ClInclude Include="SNMPAirConditionController.h" />
+    <ClInclude Include="SpecAirConditionController.h" />
+    <ClInclude Include="stringresource.h" />
+    <ClInclude Include="SunResultParse.h" />
+    <ClInclude Include="Temperature.h" />
+    <ClInclude Include="UPSAlarm.h" />
+    <ClInclude Include="UPSHandlerRS232.h" />
+    <ClInclude Include="UPSHandlerSNMP.h" />
+    <ClInclude Include="WRSOCcontrtolMain.h" />
+    <ClInclude Include="WRSOCcontrtolMenu.h" />
+    <ClInclude Include="WRSOCcontrtolSet.h" />
+    <ClInclude Include="WRSOCcontrtolToolBar.h" />
+    <ClInclude Include="WRSOCcontrtol_gui.h" />
+    <ClInclude Include="wxipctrl.hpp" />
+    <ClInclude Include="wx_pch.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="doc.txt" />
+    <None Include="version.txt" />
+    <None Include="WRSOCcontrtol.fbp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Manifest Include="WRSOCcontrtol.exe.manifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="WRSOCcontrtol.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AdaptChg.cpp" />
+    <ClCompile Include="AirHandler.cpp" />
+    <ClCompile Include="CCRadarParser.cpp" />
+    <ClCompile Include="CDAlarm.cpp" />
+    <ClCompile Include="CDRadarParser.cpp" />
+    <ClCompile Include="DynTestResult.cpp" />
+    <ClCompile Include="EnvAlarm.cpp" />
+    <ClCompile Include="EnvironmentData.cpp" />
+    <ClCompile Include="FTPThread.cpp" />
+    <ClCompile Include="Generator.cpp" />
+    <ClCompile Include="HealthIndex.cpp" />
+    <ClCompile Include="AirConditionerController.cpp" />
+    <ClCompile Include="LogAlarm.cpp" />
+    <ClCompile Include="MysqlDatabase.cpp" />
+    <ClCompile Include="NetService.cpp" />
+    <ClCompile Include="Parser.cpp" />
+    <ClCompile Include="PhaseNoiseResult.cpp" />
+    <ClCompile Include="pugixml.cpp" />
+    <ClCompile Include="RadarController.cpp" />
+    <ClCompile Include="RadarExeParser.cpp" />
+    <ClCompile Include="RadarLocalController.cpp" />
+    <ClCompile Include="RadarParser.cpp" />
+    <ClCompile Include="RadarRunEnvironment.cpp" />
+    <ClCompile Include="RadarStatusAlarm.cpp" />
+    <ClCompile Include="RefCalibResult.cpp" />
+    <ClCompile Include="SAAlarm.cpp" />
+    <ClCompile Include="SARadarParser.cpp" />
+    <ClCompile Include="SCAlarm.cpp" />
+    <ClCompile Include="SCRadarParser.cpp" />
+    <ClCompile Include="SerialPort.cpp" />
+    <ClCompile Include="SiteAlarm.cpp" />
+    <ClCompile Include="SMSHandler.cpp" />
+    <ClCompile Include="SNMPAirConditionController.cpp" />
+    <ClCompile Include="SpecAirConditionController.cpp" />
+    <ClCompile Include="SunResultParse.cpp" />
+    <ClCompile Include="Temperature.cpp" />
+    <ClCompile Include="UPSAlarm.cpp" />
+    <ClCompile Include="UPSHandlerRS232.cpp" />
+    <ClCompile Include="UPSHandlerSNMP.cpp" />
+    <ClCompile Include="version.cpp" />
+    <ClCompile Include="WRSOCcontrtolMain.cpp" />
+    <ClCompile Include="WRSOCcontrtolPlug.cpp" />
+    <ClCompile Include="WRSOCcontrtolSet.cpp" />
+    <ClCompile Include="WRSOCcontrtol_gui.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

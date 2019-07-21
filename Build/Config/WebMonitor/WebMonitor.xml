@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="gb2312" ?>
+<!-- servername表示tomcat的服务名称 -->
+<!-- port会占用连续4个端口 -->
+<!-- webdir表示web项目的相对目录名，空表示不指定tomcat访问的项目，不需要修改server.xml-->
+<!-- tomcatdir表示tomcat的相对目录 -->
+<!-- enabledatadir为0表示不启用，1表示从dataadmin插件获取，2表示自定义相对路径 -->
+<!-- datadir不需要手动填写，程序自动填写 -->
+<WebMonitor>
+    <services>
+        <sub servername="CDYWTomcat" port="8080" webdir="tomcat\webapps\WRSOCSystem" tomcatdir="tomcat" enabledatadir="0" datadir="" />
+    </services>
+</WebMonitor>

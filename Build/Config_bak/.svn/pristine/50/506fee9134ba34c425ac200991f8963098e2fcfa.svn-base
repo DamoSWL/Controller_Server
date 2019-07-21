@@ -1,0 +1,7 @@
+<database>
+	<hostname>222.18.149.122</hostname>
+	<user>root</user>
+	<password>cdyw</password>
+	<databasename>wrsocdb</databasename>
+	<updateTable>systeminfo</updateTable>
+</database>

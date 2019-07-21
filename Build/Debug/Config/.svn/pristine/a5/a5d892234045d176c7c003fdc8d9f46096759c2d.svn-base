@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="gb2312" ?>
+<Plugins path="">
+    <Plugin index="0">
+        <name>数据库管理</name>
+        <guid>{03C3F61D-7B1C-4BF7-9B46-5AE6DF5FB4E5}</guid>
+        <model>MySqlDB.dll</model>
+        <path></path>
+        <active>1</active>
+    </Plugin>
+    <Plugin index="1">
+        <name>Web监控</name>
+        <guid>{D10CDD5C-3C42-49FC-97CE-603D52B00C26}</guid>
+        <model>WebMonitor.dll</model>
+        <path></path>
+        <active>1</active>
+    </Plugin>
+    <Plugin index="2">
+        <name>FTP组件</name>
+        <guid>{463F376E-847E-4D5E-A39E-C793F7481781}</guid>
+        <model>CurlModule.dll</model>
+        <path></path>
+        <active>1</active>
+    </Plugin>
+    <Plugin index="3">
+        <name>WRSOCcontrtol</name>
+        <guid>{375AEAF9-69B4-4749-A334-FFCBCDA65F79}</guid>
+        <model>WRSOCcontrtol.dll</model>
+        <path></path>
+        <active>1</active>
+    </Plugin>
+</Plugins>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- 传感器类型 0：30H 温度传感器			1：31H 湿度传感器：
+					 2：10H 开关量传感器			3：20H 4 - 20mA模拟量传感器
+					 4：21H 0 - 20mA模拟量传感器	5：40H HT485温度传感器
+					 6：41H HT485湿度传感器		7：42H HT485开关量传感器
+					 8：83H Modubus传感器		9：E0H 精密空调
+					 10：E1H UPS					11：E3H 开关量扩展模块
+					 12：00H 错误传感器值
+					 !-- > -->
+<Config>
+    <NetConfig>
+        <Local ip="127.0.0.1" port="9696" />
+        <Radar ip="222.18.149.122" port="9595" />
+        <Env ip="222.18.149.247" port="26" />
+        <Video ip="222.18.149.238" port="8000" httpPort="8987" />
+    </NetConfig>
+    <HumidSensor>
+        <OneHS id="0">
+            <Item0 sensorType="0" attribute="0" />
+            <Item1 sensorType="0" attribute="0" />
+        </OneHS>
+        <OneHS id="0">
+            <Item0 sensorType="0" attribute="0" />
+            <Item1 sensorType="0" attribute="0" />
+        </OneHS>
+    </HumidSensor>
+</Config>

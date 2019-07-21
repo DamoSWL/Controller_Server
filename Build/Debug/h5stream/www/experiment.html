@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>  
+<html>  
+<head>
+<title>H5STREAM AUDIO</title>
+<script src="js/jquery-3.1.1.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/adapter.js"></script>
+<script src="js/platform.js"></script>
+<script src="js/h5splayer.js"></script>
+<script src="js/h5splayerhelper.js"></script>
+
+<link rel = "stylesheet" type = "text/css" href = "css/bootstrap.min.css" />
+
+</head>
+
+<body> 
+<nav class="navbar navbar-expand-lg navbar-light bg-light"></nav>
+<button type="button" id="AudioStart" class="btn btn-success" >Audio Start</button>
+<button type="button" id="AudioStop" class="btn btn-danger" >Audio Stop</button>
+<br></br>
+<button type="button" id="AudioBackStart" class="btn btn-success">AudBack Start</button>
+<button type="button" id="AudioBackStop" class="btn btn-danger">AudBack Stop</button>
+
+</body>
+
+<script>
+var conf1 = {
+	protocol: window.location.protocol, //http: or https:
+	host: window.location.host, //localhost:8080
+	rootpath:'/', // '/' or window.location.pathname
+	token:'token1',
+	session:'c1782caf-b670-42d8-ba90-2244d0b0ee83' //session got from login
+};
+
+var conf2 = {
+	protocol: window.location.protocol, //http: or https:
+	host: window.location.host, //localhost:8080
+	rootpath:'/', // '/' or window.location.pathname
+	token:'token1',
+	session:'c1782caf-b670-42d8-ba90-2244d0b0ee83' //session got from login
+};
+var audPlayer;
+var audBackPlayer;
+
+$('#AudioStart').click(function () {
+	console.log("AudioStart");
+	delete audPlayer;
+	audPlayer = new H5sPlayerAudio(conf1);
+	audPlayer.connect();
+});
+
+$('#AudioStop').click(function () {
+	console.log("AudioStop");
+	audPlayer.disconnect();
+	delete audPlayer;
+});
+
+$('#AudioBackStart').click(function () {
+	console.log("AudioBackStart");
+	delete audBackPlayer;
+	audBackPlayer = new H5sPlayerAudBack(conf2);
+	audBackPlayer.connect();
+});
+
+$('#AudioBackStop').click(function () {
+	console.log("AudioBackStop");
+	audPlayer.disconnect();
+	delete audPlayer;
+});
+
+
+</script>
+
+</html> 
